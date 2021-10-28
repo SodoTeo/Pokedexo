@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import ActionAreaCard from './card.js';
+
 const PokedexApi = () => {
   const [pokemons] = useState([
     { id: 1, name: 'Ninetales', type: 'Fire', img: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/038.png' },
@@ -13,10 +15,10 @@ const PokedexApi = () => {
       
       {pokemons.map((pokemon) =>
         <div key={`${pokemon.id}-${pokemon.name}`}>
-          <p>Order: {pokemon.id}</p>
-          <p>Name: {pokemon.name}</p>
-          <p>Type: {pokemon.type}</p>
-          <img src={pokemon.img} alt={pokemon.name}/>
+          <ActionAreaCard 
+            img = {pokemon.img}
+            name = {pokemon.name}
+            type = {pokemon.type} />
         </div>)}
     </div>
   )

@@ -5,24 +5,22 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-import Pokedex from './pokedex.js';
-
-const ActionAreaCard = () =>  {
+const ActionAreaCard = ({img, name, type}) =>  {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image="urlimage"
-          alt="pokemonsName"
+          height="300"
+          image={img}
+          alt={name}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Pokemon's Name
+            {name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Pokemon's Type
+            Type: {type}
           </Typography>
         </CardContent>
       </CardActionArea>
