@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ActionAreaCard from './card.js';
+import ActionAreaCard from './Card.js';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
