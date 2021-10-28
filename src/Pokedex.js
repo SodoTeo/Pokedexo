@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ActionAreaCard from './Card.js';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import ActionCard from './ActionCard.js';
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -21,7 +21,7 @@ const PokedexApi = () => {
   ]);
 
   return (
-    <div className="pokedex">
+    <div className="Pokedex">
       <h2>Pokedex</h2>
       
       <Box sx={{ maxWidth: 700 }}>
@@ -30,7 +30,7 @@ const PokedexApi = () => {
             <Grid item xs={6}>
               <Item>
                 <div key={`${pokemon.id}-${pokemon.name}`}>
-                  <ActionAreaCard 
+                  <ActionCard 
                     img = {pokemon.img}
                     name = {pokemon.name}
                     type = {pokemon.type} />
