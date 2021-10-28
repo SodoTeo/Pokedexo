@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-const ActionAreaCard = ({img, name, type}) =>  {
+const ActionCard = ({img, name, type}) =>  {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -28,4 +28,4 @@ const ActionAreaCard = ({img, name, type}) =>  {
   );
 }
 
-export default ActionAreaCard;
+export default ActionCard;
