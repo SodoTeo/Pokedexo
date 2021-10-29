@@ -4,8 +4,10 @@ import Pokedex from './Pokedex.js';
 
 
 
+
 const App = () => (
   <div className="App">
+    
     <Pokedex />
   </div>
 );
